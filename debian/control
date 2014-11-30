@@ -1,0 +1,20 @@
+Source: python-kafka
+Priority: optional
+Maintainer: Aleksey Morarash <aleksey.morarash@envisionx.co>
+Section: python
+Homepage: https://github.com/mumrah/kafka-python
+VCS-Browser: https://github.com/mumrah/kafka-python/
+VCS-Git: https://github.com/mumrah/kafka-python.git
+XS-Python-Version: 2.7
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools
+
+Package: python-kafka
+Architecture: all
+Depends: python, python-six, python-pkg-resources, python-snappy
+Description: Apache Kafka Python client library
+ Provides low-level protocol support for Apache Kafka as well
+ as high-level consumer and producer classes. Request batching
+ is supported by the protocol as well as broker-aware request
+ routing. Gzip and Snappy compression is also supported for
+ message sets.

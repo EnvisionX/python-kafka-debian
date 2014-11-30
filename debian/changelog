@@ -1,0 +1,5 @@
+python-kafka (0.9.2-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Aleksey Morarash <aleksey.morarash@massivesolutions.eu>  Sun, 30 Nov 2014 14:29:00 +0200

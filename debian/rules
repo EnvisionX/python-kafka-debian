@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+%:
+	dh $@
+
+override_dh_pysupport:
+
+DESTDIR = debian/python-kafka
+override_dh_auto_install:
+	python setup.py install --root=$(DESTDIR) --prefix=/usr --install-layout=deb
